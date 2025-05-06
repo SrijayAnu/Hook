@@ -6,9 +6,7 @@ pipeline {
         stage ("checkout")
         {
             steps {
-              sh 'java -version'
-              sh 'kubectl get nodes'
-
+              sh 'ls -lag'
                  }
         }
       
