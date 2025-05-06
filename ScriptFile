@@ -1,0 +1,11 @@
+pipeline {
+agent any
+stages {
+stage ('fitst')
+{
+steps {
+sh 'java -version'
+}
+}
+}
+}
