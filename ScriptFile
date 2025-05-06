@@ -1,13 +1,15 @@
 pipeline {
-agent {
-label "Worker"
-}
-stages {
-stage ('fitst')
-{
-steps {
-sh 'java -version'
-}
-}
-}
+    agent {
+        label "Worker"
+    }
+    stages {
+        stage ("Git checkout")
+        {
+            steps {
+              sh 'kubectl get nodes'
+              sh 'kubectl get cs'
+                 }
+        }
+      
+    }
 }
