@@ -3,11 +3,10 @@ pipeline {
         label "Worker"
     }
     stages {
-        stage ("Git checkout")
+        stage ("checkout")
         {
             steps {
-              sh 'kubectl get nodes'
-              sh 'kubectl get cs'
+              sh 'java -version'
                  }
         }
       
